@@ -1,4 +1,4 @@
-# CogWare Open
+# LLM Tools
 
 Operational protocols and tools for AI systems.
 

@@ -1,0 +1,13 @@
+# .gitignore
+
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+_scratch/
+_temp/
+*.tmp

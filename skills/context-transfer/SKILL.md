@@ -1,9 +1,9 @@
 ---
-name: context-dump
-description: "Generate a state document (context dump) that allows any fresh AI instance to resume work without conversation history. Use this skill whenever the user asks to checkpoint, create a state dump, save state, generate a handoff document, create compaction insurance, or says anything like 'snapshot this', 'create a context dump', 'checkpoint', 'save state for handoff', 'write a recovery doc', or 'dump context'. Also trigger when the user mentions compaction concerns, session handoff, multi-session continuity, or wants to preserve the current conversation's state. Works for any conversation type: projects, research, debugging, investigations, design sessions, or long-running chats. This skill produces a structured markdown document optimized for AI cold-start recovery, not human notes."
+name: context-transfer
+description: "Generate a state document (context transfer) that allows any fresh AI instance to resume work without conversation history. Use this skill whenever the user asks to checkpoint, create a state transfer, save state, generate a handoff document, create compaction insurance, or says anything like 'snapshot this', 'create a context transfer', 'checkpoint', 'save state for handoff', 'write a recovery doc', or 'transfer context'. Also trigger when the user mentions compaction concerns, session handoff, multi-session continuity, or wants to preserve the current conversation's state. Works for any conversation type: projects, research, debugging, investigations, design sessions, or long-running chats. This skill produces a structured markdown document optimized for AI cold-start recovery, not human notes."
 ---
 
-# Context Dump
+# Context Transfer
 
 Generate structured state documents for AI cold-start recovery across any conversation type.
 
@@ -27,7 +27,7 @@ This contains the complete section definitions, templates, rules, and quality ch
 
 ## Quick Reference
 
-The context dump has 11 sections. Scale to complexity — not every conversation needs all sections.
+The context transfer has 11 sections. Scale to complexity — not every conversation needs all sections.
 
 | Section | Purpose | Required? |
 |---------|---------|-----------|
@@ -61,11 +61,11 @@ The context dump has 11 sections. Scale to complexity — not every conversation
 
 ## Output
 
-Save as: `[topic_or_project]_context_dump.md` in `/mnt/user-data/outputs/`
+Save as: `[topic_or_project]_context_transfer.md` in `/mnt/user-data/outputs/`
 
 The document header should include:
 ```markdown
-# Context Dump — [Topic or Project Name]
+# Context Transfer — [Topic or Project Name]
 
 **Version:** [N]
 **Updated:** [date]
@@ -76,7 +76,7 @@ The document header should include:
 
 These are the rules most likely to be missed. Full rules are in the protocol reference.
 
-- **Single source of truth:** One context dump per conversation/project. Never maintain parallel state docs.
+- **Single source of truth:** One context transfer per conversation/project. Never maintain parallel state docs.
 - **Correction sentence:** §I must state what it IS then what it is NOT.
 - **Narrative WHY:** §IV uses prose, not tables. Tables compress reasoning too much for cold start.
 - **Inferred rationale:** If WHY isn't explicitly stated, mark as `[inferred]` — never present inference as ground truth.
@@ -89,4 +89,4 @@ These are the rules most likely to be missed. Full rules are in the protocol ref
 - This skill is validated across Claude, GPT, and Gemini cold instances (n=5 tests, zero operational failures)
 - The protocol is model-agnostic — works without cognitive scaffolding
 - Optimized for AI pattern recognition, not human readability
-- The context dump IS the conversation's memory — treat it as critical infrastructure
+- The context transfer IS the conversation's memory — treat it as critical infrastructure

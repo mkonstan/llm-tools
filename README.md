@@ -4,7 +4,7 @@ Operational protocols and tools for AI systems.
 
 ## What's Here
 
-### Context Dump Protocol (v2.4s)
+### Context Transfer Protocol (v2.4s)
 
 A structured state document that allows any fresh AI instance to resume work without conversation history. Solves context loss from compaction, session handoff, and multi-session continuity.
 
@@ -12,13 +12,13 @@ A structured state document that allows any fresh AI instance to resume work wit
 - **Model-agnostic:** Works without cognitive scaffolding or special prompting
 - **37.7% compressed** from original with zero behavioral degradation
 
-📄 [Protocol](protocols/context-dump/context-dump-protocol-v2.4s.md)
+📄 [Protocol](protocols/context-transfer/context-transfer-protocol-v2.4s.md)
 
-### Context Dump Skill (for Claude Projects)
+### Context Transfer Skill (for Claude Projects)
 
-Drop-in skill that triggers on checkpoint/snapshot requests and generates context dumps following the protocol.
+Drop-in skill that triggers on checkpoint/snapshot requests and generates context transfers following the protocol.
 
-📁 [Skill](skills/context-dump/)
+📁 [Skill](skills/context-transfer/)
 
 ### Theory
 

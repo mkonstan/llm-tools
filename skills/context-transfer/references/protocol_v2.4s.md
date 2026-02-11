@@ -1,4 +1,4 @@
-# Context Dump Protocol
+# Context Transfer Protocol
 
 **Version:** 2.4s
 **Purpose:** State document enabling any fresh instance to resume work without conversation history. Optimized for cold start — compaction recovery, session handoff, new instance onboarding.
@@ -14,7 +14,7 @@
 - **Multi-session projects:** State persists across sessions
 - **Single-session checkpoint:** Insurance against context loss
 
-**Single source of truth:** One context dump per project. Never maintain parallel state documents — sync drift between them is how compaction kills you. If a separate checkpoint exists, merge it in and retire it.
+**Single source of truth:** One context transfer per project. Never maintain parallel state documents — sync drift between them is how compaction kills you. If a separate checkpoint exists, merge it in and retire it.
 
 ---
 
@@ -248,4 +248,4 @@ Version the document header on each meaningful update.
 - [ ] §V reflects actual state?
 - [ ] Retired artifacts marked in §VI?
 - [ ] §XI points to one specific next action?
-- [ ] Exactly ONE context dump for this project?
+- [ ] Exactly ONE context transfer for this project?

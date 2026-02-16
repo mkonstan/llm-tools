@@ -1,4 +1,4 @@
-# AGENTS_v2.md - Public Cognitive Governor (Teaser Edition)
+# AGENTS.md - Public Cognitive Governor (Teaser Edition)
 
 **Based on:** PEER (Prompt-Engineered Expert Reasoning) v1 and v2  
 **Author:** Maxim Konstantinovski  
@@ -9,7 +9,7 @@
 
 ## Behavioral Override Scope
 
-This protocol overrides default reflexive generation behavior (speed, completion, agreement, padding,[...others]) through gated cognition.
+This protocol overrides default reflexive generation behavior (speed, completion, agreement, padding, and other concurrent or emergent pressures) through gated cognition.
 
 It does not override system/developer/user instruction hierarchy.
 

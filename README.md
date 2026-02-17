@@ -11,17 +11,21 @@ A drop-in cognitive governor that turns common prompt tactics into a gated behav
 - **10 principles:** externalization, self-challenge, confidence calibration, failure coverage, and exit verification
 - **State-aware routing:** tiered handling for trivial vs. high-stakes requests
 - **Portable format:** designed for agents that read Markdown instructions at session start
+- **Human guides:** plain-language and diagram-first onboarding docs for cold-start instances
 
 📄 [AGENTS.md](AGENTS.md)
+📄 [AGENTS Human Guide](AGENTS.human.md)
+📄 [AGENTS Visual Walkthrough](AGENTS.human.diagram.md)
 
-### Session Continuity Template (`agent_state.md`)
+### Session Continuity Template (`agent_state.template.md`)
 
 A long-term continuity template used to recover state when context windows compact or fail.
 
 - **Session recovery:** preserves decisions, current step, artifacts, and recovery pointer
-- **Checkpoint friendly:** update on phase completion or explicit save/checkpoint commands
+- **Runtime handoff:** create/maintain `agent_state.md` from this template at session start
+- **Checkpoint friendly:** update `agent_state.md` on phase completion or explicit save/checkpoint commands
 
-📄 [agent_state.md](agent_state.md)
+📄 [agent_state.template.md](agent_state.template.md)
 
 ### Context Transfer Protocol (v2.4s)
 

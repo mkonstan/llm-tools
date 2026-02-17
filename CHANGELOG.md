@@ -4,10 +4,10 @@
 
 ### Added
 - Public `AGENTS.md` cognitive governor
-- `agent_state.md` session continuity template
+- `agent_state.template.md` session continuity template
 
 ### Updated
-- README with guidance for `AGENTS.md` and `agent_state.md`
+- README with guidance for `AGENTS.md`, `agent_state.template.md`, and runtime `agent_state.md`
 
 ## [0.1.0] - 2026-02-10
 

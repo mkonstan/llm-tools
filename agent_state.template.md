@@ -1,8 +1,9 @@
-# Agent State
+# Agent State Template
 
 **Version:** 1
 **Updated:** <!-- YYYY-MM-DD — update on every write -->
-**Purpose:** Session continuity. Read this on every session start. Update before session end.
+**Purpose:** Reference template for session continuity. Copy to `agent_state.md` and overwrite with live state.
+**Protocol Source:** `protocols/context-transfer/context-transfer-protocol-v2.4s.md`
 
 ---
 
@@ -49,7 +50,8 @@ Step 4: [description]
 | File | Purpose | Status |
 |------|---------|--------|
 | `AGENTS.md` | Cognitive scaffolding protocol | ✅ Active |
-| `agent_state.md` | This file — session state | ✅ Active |
+| `agent_state.template.md` | Template seed for continuity state | ✅ Active |
+| `agent_state.md` | Live continuity state generated from template | 🔧 Runtime |
 <!-- | `filename` | description | ✅ Complete / 🔧 Draft / ❌ Retired | -->
 
 ---
